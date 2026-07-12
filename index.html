@@ -28,7 +28,7 @@
     color:var(--ink);
     font-family:'Inter', sans-serif;
     -webkit-font-smoothing:antialiased;
-    padding-top: 64px; /* space for sticky header (reduced height) */
+    padding-top: 56px; /* space for sticky header (reduced height) */
   }
   h1,h2,h3, .display{
     font-family:'Fraunces', serif;
@@ -42,22 +42,22 @@
   header.node-header{
     position:fixed;
     top:0; left:0; right:0;
-    min-height:56px;
-    background: linear-gradient(135deg, #D4357F, #B42266);
+    min-height:50px;
+    background: linear-gradient(135deg, rgba(212,53,127,0.96), rgba(180,34,102,0.96));
     color:#ffffff;
     display:flex;
     align-items:flex-start;
     gap:8px;
-    padding:4px 16px;
+    padding:2px 16px;
     z-index:200;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
   }
   .header-text-col{
     flex:1;
     min-width:0;
     display:flex;
     flex-direction:column;
-    gap:1px;
+    gap:0px;
   }
   .header-bottom-row{
     display:flex;
@@ -81,7 +81,7 @@
   .header-name-block{ line-height:1.15; min-width:0; }
   .header-name{
     font-family:'Fraunces', serif;
-    font-size:17px;
+    font-size:15px;
     font-weight:600;
     white-space:nowrap;
     overflow:hidden;
@@ -394,7 +394,7 @@
   </div>
 
   <section class="video-section">
-    <p class="section-label">לצפייה</p>
+    <p class="section-label">כדאי לצפות</p>
     <div class="video-thumb-wrap" id="videoThumb" onclick="openModal()">
       <img src="https://img.youtube.com/vi/yIUWx-mtsbM/hqdefault.jpg" alt="Video thumbnail"
            onerror="this.onerror=null; this.src='https://img.youtube.com/vi/yIUWx-mtsbM/mqdefault.jpg';">
