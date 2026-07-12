@@ -168,7 +168,7 @@
   .read-more-btn:hover{ text-decoration:underline; }
 
   /* ---------- Video Section ---------- */
-  .video-section{ margin-bottom:34px; }
+  .video-section{ margin-bottom:16px; }
   .section-label{
     font-size:12px;
     text-transform:uppercase;
@@ -246,16 +246,21 @@
 
   /* ---------- More link ---------- */
   .more-link{
-    display:inline-flex;
+    display:flex;
     align-items:center;
-    gap:6px;
-    font-size:14.5px;
+    justify-content:center;
+    width:fit-content;
+    margin:0 auto;
+    padding:14px 32px;
+    border-radius:12px;
+    background:var(--blush);
+    color:#fff;
+    font-size:15px;
     font-weight:600;
-    color:var(--teal-deep);
     text-decoration:none;
-    border-bottom: 2px solid var(--blush);
-    padding-bottom:2px;
+    transition:background 0.15s ease;
   }
+  .more-link:hover{ background:var(--blush-deep); }
 
   /* ---------- Full-screen video viewer ---------- */
   /* No vh/svh, no visualViewport, no page-relative math of any kind.
@@ -402,7 +407,6 @@
         <svg viewBox="0 0 24 24" fill="#1f4d46"><path d="M8 5v14l11-7z"/></svg>
       </div>
     </div>
-    <p class="video-caption">הקישו לצפייה — נפתח בעמוד זה, לא ביוטיוב</p>
   </section>
 
   <section class="related-section">
@@ -429,7 +433,7 @@
     </div>
   </section>
 
-  <a class="more-link" href="#" onclick="return false;">עוד בנושא בדיקה גינקולוגית ←</a>
+  <a class="more-link" href="#" onclick="return false;">לכל התכנים בנושא</a>
 </main>
 
 <!-- Full-screen video viewer -->
