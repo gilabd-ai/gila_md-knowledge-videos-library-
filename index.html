@@ -43,7 +43,7 @@
     position:fixed;
     top:0; left:0; right:0;
     min-height:50px;
-    background: linear-gradient(135deg, rgba(212,53,127,0.96), rgba(180,34,102,0.96));
+    background: linear-gradient(135deg, rgba(212,53,127,0.91), rgba(180,34,102,0.91));
     color:#ffffff;
     display:flex;
     align-items:center;
@@ -156,7 +156,7 @@
   .read-more-btn{
     background:none;
     border:none;
-    color:var(--blush-deep);
+    color:rgba(212,53,127,0.91);
     font-weight:600;
     font-size:14px;
     padding:10px 0 0;
@@ -253,14 +253,14 @@
     margin:0 auto;
     padding:14px 32px;
     border-radius:12px;
-    background:var(--blush);
+    background: linear-gradient(135deg, rgba(212,53,127,0.91), rgba(180,34,102,0.91));
     color:#fff;
     font-size:15px;
     font-weight:600;
     text-decoration:none;
-    transition:background 0.15s ease;
+    transition:box-shadow 0.15s ease;
   }
-  .more-link:hover{ background:var(--blush-deep); }
+  .more-link:hover{ box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
 
   /* ---------- Full-screen video viewer ---------- */
   /* No vh/svh, no visualViewport, no page-relative math of any kind.
@@ -393,7 +393,7 @@
       מטופלות רבות מגיעות לבדיקה הגינקולוגית הראשונה שלהן חרדות מכאב, והחרדה עצמה עלולה להפוך את הביקור למאתגר יותר משהוא צריך להיות. בבדיקה שגרתית, מידה מסוימת של לחץ ואי־נוחות קלה היא תופעה נורמלית, בפרט בשלב הכנסת הספקולום, אך כאב חד אינו צפוי וכדאי לדווח עליו לרופא/ה מיד. נשימות עמוקות, הרפיית שרירי הבטן והאגן, ותקשורת פתוחה עם הרופא/ה לאורך כל הבדיקה — כל אלו יכולים לעשות הבדל אמיתי. אם יש לך היסטוריה של טראומה, וגיניזמוס, או חרדה משמעותית, כדאי לספר על כך לרופא/ה מראש כדי שהבדיקה תותאם אישית עבורך. כל גוף מגיב אחרת, ואין דבר כזה שאלה רגישה מדי כשמדובר בנוחות שלך.
     </p>
     <button class="read-more-btn" id="readMoreBtn" onclick="toggleSummary()">
-      <span id="readMoreLabel">להמשך קריאה</span>
+      <span id="readMoreLabel">קראו עוד</span>
       <svg id="readMoreIcon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
     </button>
   </div>
@@ -463,7 +463,7 @@
     const label = document.getElementById('readMoreLabel');
     const icon = document.getElementById('readMoreIcon');
     const expanded = text.classList.toggle('expanded');
-    label.textContent = expanded ? 'הצגת פחות' : 'להמשך קריאה';
+    label.textContent = expanded ? 'הצגת פחות' : 'קראו עוד';
     icon.style.transform = expanded ? 'rotate(180deg)' : 'rotate(0deg)';
   }
 
