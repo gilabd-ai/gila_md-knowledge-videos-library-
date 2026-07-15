@@ -79,7 +79,7 @@
   }
   .header-bottom-row{
     display:flex;
-    align-items:flex-end;
+    align-items:flex-start;
     justify-content:space-between;
     gap:8px;
   }
@@ -101,6 +101,7 @@
     font-family:'Fraunces', serif;
     font-size:15px;
     font-weight:600;
+    line-height:1;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -302,6 +303,11 @@
     color:#5c6b64;
     line-height:1.6;
     margin:28px 0 4px;
+    display:block;
+    text-decoration:none;
+  }
+  .disclaimer-underline{
+    text-decoration:underline;
   }
 
   /* ---------- Full-screen video viewer ---------- */
@@ -476,7 +482,7 @@
 
   <a class="more-link" href="#" onclick="return false;">לעוד תוכן בנושא</a>
 
-  <p class="site-disclaimer">⚠️ המידע באתר נועד למטרות מידע והעשרה בלבד ואינו מהווה תחליף לייעוץ רפואי אישי, אבחנה או טיפול. בכל שאלה או החלטה רפואית מומלץ לפנות לרופא.</p>
+  <a class="site-disclaimer" href="#">⚠️ המידע באתר נועד למטרות מידע והעשרה בלבד, ואינו מהווה תחליף לייעוץ רפואי. <span class="disclaimer-underline">לקריאת ההבהרה הרפואית המלאה יש ללחוץ כאן</span>.</a>
 </main>
 
 <!-- Full-screen video viewer -->
